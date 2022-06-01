@@ -6,5 +6,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".QuizActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <Button
+            android:text="Quiz1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:id="@+id/quiz1"
+            tools:layout_editor_absoluteY="150dp"
+            tools:layout_editor_absoluteX="161dp"/>
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
