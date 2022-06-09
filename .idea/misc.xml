@@ -3,10 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/GitHUb/MadProject/app/src/main/res/layout/activity_quiz.xml" value="0.2526041666666667" />
-        <entry key="..\:/GitHUb/MadProject/app/src/main/res/layout/activity_quiz1.xml" value="0.12864583333333332" />
-        <entry key="..\:/GitHUb/MadProject/app/src/main/res/layout/activity_videos.xml" value="0.2526041666666667" />
-        <entry key="..\:/GitHUb/MadProject/app/src/main/res/layout/score_bottom_sheet.xml" value="0.12864583333333332" />
+        <entry key="..\:/Users/Zuber/Documents/MadProject/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Zuber/Documents/MadProject/app/src/main/res/layout/activity_programs.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Zuber/Documents/MadProject/app/src/main/res/layout/activity_videos.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

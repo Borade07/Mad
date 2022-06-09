@@ -14,18 +14,18 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Quiz1Activity extends AppCompatActivity {
+public class Quiz2Activity extends AppCompatActivity {
+
+
     private TextView questionTV,questionNumberTV;
     private Button option1Btn,option2Btn,option3Btn,option4Btn;
     private ArrayList<QuizModal> quizModalArrayList;
     Random random;
     int currentScore = 0,questionAttemted = 1,currentPos;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz1);
+        setContentView(R.layout.activity_quiz2);
 
         questionTV = findViewById(R.id.idTVQuestion);
         questionNumberTV = findViewById(R.id.idTVQuestionAttempted);
@@ -96,10 +96,11 @@ public class Quiz1Activity extends AppCompatActivity {
 
             }
         });
-    }
 
+
+    }
     private void showBottomSheet(){
-        BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(Quiz1Activity.this);
+        BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(Quiz2Activity.this);
         View bottomSheetView = LayoutInflater.from(getApplicationContext()).inflate(R.layout.score_bottom_sheet,(LinearLayout)findViewById(R.id.idLLScore));
         TextView scoreTV = bottomSheetView.findViewById(R.id.idTVScore);
         Button restartQuizBtn = bottomSheetView.findViewById(R.id.idBtnRestart);
@@ -139,18 +140,15 @@ public class Quiz1Activity extends AppCompatActivity {
 
     private void getQuizQuestion(ArrayList<QuizModal> quizModalArrayList ) {
 
-        quizModalArrayList.add(new QuizModal("Question 1 ","Q1 O1","Q1 O2","Q1 O3","Q1 O4","Q1 o4"));
-        quizModalArrayList.add(new QuizModal("Question 2 ","Q2 O2","Q2 O2","Q2 O3","Q2 O4","Q2 O4"));
-        quizModalArrayList.add(new QuizModal("Question 3 ","Q3 O3","Q3 O2","Q3 O3","Q3 O4","Q3 O4"));
-        quizModalArrayList.add(new QuizModal("Question 4 ","Q4 O4","Q4 O2","Q4 O3","Q4 O4","Q4 O4"));
-        quizModalArrayList.add(new QuizModal("Question 5 ","Q5 O4","Q5 O2","Q5 O3","Q5 O4","Q5 O4"));
-        quizModalArrayList.add(new QuizModal("Question 6 ","Q6 O4","Q6 O2","Q6 O3","Q6 O4","Q6 O4"));
-        quizModalArrayList.add(new QuizModal("Question 7 ","Q7 O4","Q7 O2","Q7 O3","Q7 O4","Q7 O4"));
-        quizModalArrayList.add(new QuizModal("Question 8 ","Q8 O4","Q8 O2","Q8 O3","Q8 O4","Q8 O4"));
-        quizModalArrayList.add(new QuizModal("Question 9 ","Q9 O4","Q9 O2","Q9 O3","Q9 O4","Q9 O4"));
-        quizModalArrayList.add(new QuizModal("Question 10 ","Q10 O4","Q10 O2","Q10 O3","Q10 O4","Q10 O4"));
+        quizModalArrayList.add(new QuizModal("Question 1 ","Q1 O1","Q1 O2","Q1 O3","Q1 O4","Q1 O3"));
+        quizModalArrayList.add(new QuizModal("Question 2 ","Q2 O2","Q2 O2","Q2 O3","Q2 O4","Q2 O3"));
+        quizModalArrayList.add(new QuizModal("Question 3 ","Q3 O3","Q3 O2","Q3 O3","Q3 O4","Q3 O3"));
+        quizModalArrayList.add(new QuizModal("Question 4 ","Q4 O4","Q4 O2","Q4 O3","Q4 O4","Q4 O3"));
+        quizModalArrayList.add(new QuizModal("Question 5 ","Q5 O4","Q5 O2","Q5 O3","Q5 O4","Q5 O3"));
+        quizModalArrayList.add(new QuizModal("Question 6 ","Q6 O4","Q6 O2","Q6 O3","Q6 O4","Q6 O3"));
+        quizModalArrayList.add(new QuizModal("Question 7 ","Q7 O4","Q7 O2","Q7 O3","Q7 O4","Q7 O3"));
+        quizModalArrayList.add(new QuizModal("Question 8 ","Q8 O4","Q8 O2","Q8 O3","Q8 O4","Q8 O3"));
+        quizModalArrayList.add(new QuizModal("Question 9 ","Q9 O4","Q9 O2","Q9 O3","Q9 O4","Q9 O3"));
+        quizModalArrayList.add(new QuizModal("Question 10 ","Q10 O4","Q10 O2","Q10 O3","Q10 O4","Q10 O3"));
     }
-
-
-
 }
