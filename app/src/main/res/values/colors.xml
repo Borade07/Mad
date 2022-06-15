@@ -5,7 +5,10 @@
     <color name="colorAccent">#FF4081</color>
     <color name="black">#000000</color>
     <color name="purple_200">#CE93D8</color>
+<<<<<<< HEAD
     <color name="programs">#4199FD</color>
     <color name="QuizPage">#dfc98c</color>
+=======
+>>>>>>> 7266b549de0fa95ab1f0d78e404d952a6816615b
     <color name="white">#ffffff</color>
 </resources>

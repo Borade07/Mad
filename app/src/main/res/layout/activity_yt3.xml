@@ -10,7 +10,7 @@
     <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:videoId="aczihVS3Sa0"
+            app:videoId="jUmqYE2iWiI"
             app:autoPlay="true"
             app:showFullScreenButton="false"/>
 

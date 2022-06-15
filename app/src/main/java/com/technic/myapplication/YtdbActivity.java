@@ -1,5 +1,6 @@
 package com.technic.myapplication;
 
+<<<<<<< HEAD
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -10,6 +11,16 @@ import android.widget.Button;
 public class YtdbActivity extends AppCompatActivity {
 
 
+=======
+import android.content.Intent;
+import android.view.View;
+import android.widget.Button;
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class YtdbActivity extends AppCompatActivity {
+
+>>>>>>> 7266b549de0fa95ab1f0d78e404d952a6816615b
     Button yt90,yt91,yt92,yt93,yt94,yt95;
 
     @Override
