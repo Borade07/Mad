@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
 //        mainGrid = (GridLayout) findViewById(R.id.mainGrid);
         ppt = (CardView) findViewById(R.id.ppt);
         questionBank = (CardView) findViewById(R.id.questionBank);
@@ -43,7 +45,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //        setSingleEvent(mainGrid);
 
     }
-
+    public void QuitApp(View view) {
+        MainActivity.this.finish();
+        System.exit(0);
+    }
     @Override
     public void onClick(View view) {
         Intent intent;

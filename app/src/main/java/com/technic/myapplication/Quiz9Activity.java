@@ -14,19 +14,16 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Quiz1Activity extends AppCompatActivity {
+public class Quiz9Activity extends AppCompatActivity {
     private TextView questionTV,questionNumberTV;
     private Button option1Btn,option2Btn,option3Btn,option4Btn;
     private ArrayList<QuizModal> quizModalArrayList;
     Random random;
     int currentScore = 0,questionAttemted = 1,currentPos;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz1);
-
+        setContentView(R.layout.activity_quiz9);
         questionTV = findViewById(R.id.idTVQuestion);
         questionNumberTV = findViewById(R.id.idTVQuestionAttempted);
         option1Btn = findViewById(R.id.idBtnOption1);
@@ -38,8 +35,6 @@ public class Quiz1Activity extends AppCompatActivity {
         random = new Random();
 
         getQuizQuestion(quizModalArrayList);
-
-
         currentPos = random.nextInt(quizModalArrayList.size());
         setDataToViews(currentPos);
         option1Btn.setOnClickListener(new View.OnClickListener() {
@@ -98,10 +93,11 @@ public class Quiz1Activity extends AppCompatActivity {
 
             }
         });
-    }
 
+
+    }
     private void showBottomSheet(){
-        BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(Quiz1Activity.this);
+        BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(Quiz9Activity.this);
         View bottomSheetView = LayoutInflater.from(getApplicationContext()).inflate(R.layout.score_bottom_sheet,(LinearLayout)findViewById(R.id.idLLScore));
         TextView scoreTV = bottomSheetView.findViewById(R.id.idTVScore);
         Button restartQuizBtn = bottomSheetView.findViewById(R.id.idBtnRestart);
@@ -141,41 +137,38 @@ public class Quiz1Activity extends AppCompatActivity {
 
     private void getQuizQuestion(ArrayList<QuizModal> quizModalArrayList ) {
 
-        quizModalArrayList.add(new QuizModal("Which of the following virtual machine is used by the Android operating system?", "JVM", "Dalvik virtual machine", "Simple virtual machine", "None of the above", "Dalvik virtual machine"
-        ));
-        quizModalArrayList.add(new QuizModal("Under which of the following Android is licensed?", "OSS", "Sourceforge", "Apache/MIT", "None of the above", "Apache/MIT"));
-        quizModalArrayList.add(new QuizModal("For which of the following Android is mainly developed?", "Servers", "Desktops", "Laptops", "Mobile devices", "Mobile devices"
-        ));
-        quizModalArrayList.add(new QuizModal("Which of the following is the first mobile phone released that ran the Android OS?", "HTC Hero", "Google gPhone", "T - Mobile G1", "None of the above", "T - Mobile G1"));
-        quizModalArrayList.add(new QuizModal("Android is based on which of the following language?", "Java", "C++", "C", "None of the above", "Java"
-        ));
-        quizModalArrayList.add(new QuizModal("APK stands for -", "Android Phone Kit", "Android Page Kit", "Android Package Kit", "None of the above", "Android Package Kit"
-        ));
 
-        quizModalArrayList.add(new QuizModal("APK stands for -", "Android Phone Kit", "Android Page Kit", "Android Package Kit", "None of the above", "Android Package Kit"));
-
-        quizModalArrayList.add(new QuizModal("What does API stand for?", "Application Programming Interface", "Android Programming Interface", "Android Page Interface", "quizModalArrayList.add(new QuizModal(Android Page Interface", " Application Programming Interface"));
-
-        quizModalArrayList.add(new QuizModal("Which of the following converts Java byte code into Dalvik byte code?", "Dalvik converter", "Dex compiler", "Mobile interpretive compiler (MIC)", "None of the above", "Dex compiler"));
-
-        quizModalArrayList.add(new QuizModal("How can we stop the services in android?", "By using the stopSelf() and stopService() method", "y using the finish() method", "By using system.exit() method", "None of the above", "By using the stopSelf() and stopService() method"));
-
-//
+        quizModalArrayList.add(new QuizModal("What was Google’s main business motivation for supporting Android", "To level the playing field for mobile devices", "To directly compete with the iPhone", "To corner the mobile device application market for licensing purposes", "To allow them to advertise more", "To allow them to advertise more"));
 
 
-        quizModalArrayList.add(new QuizModal("What is the parent class of all Activity widgets", "Layout", "ViewGroup", "View", "Widget", "View"));
+        quizModalArrayList.add(new QuizModal("What Activity method you use to retrieve a reference to an Android view by using the id attribute of a resource XML", "findViewByReference(int id)", "findViewById(int id)", "findViewById(String id)", "retrieveResourceById(int id)", "findViewById(String id)"));
 
 
-        quizModalArrayList.add(new QuizModal("What is the name of the class used by Intent to store additional information", "Parcelable", "DataStore", "Extra", "Bundle", "Bundle"));
+        quizModalArrayList.add(new QuizModal(" First fully 64 bit compatible version of android is", "Gingerbread", "Android 5.0 Lollipop", "Android 1.6 Donut", "Android Jelly Bean", "Android 5.0 Lollipop"));
 
 
-        quizModalArrayList.add(new QuizModal("While Java or Kotlin source files stored in ....", "/res/drawable", "/src", "/res/values", "/res/layout", "/src"));
+        quizModalArrayList.add(new QuizModal("What does the Android project folder “res/” contain", "Resource files", "Libraries", "Java source code", "Java Activity classes", "Resource files"));
 
 
-        quizModalArrayList.add(new QuizModal("What year was the Open Handset Alliance announced", "2005", "2007", "2008", "2006", "2007"));
+        quizModalArrayList.add(new QuizModal("What method you should override to use Android menu system", "onCreateOptionsMenu()", "onCreateMenu()", "onMenuCreated()", "onCreateContextMenu()", "onCreateOptionsMenu()"));
 
 
+        quizModalArrayList.add(new QuizModal("What does the following line of code achieve", "Starts an activity", "Creates an implicit Intent", "Creates a hidden Intent", "Create an explicit Intent", "Create an explicit Intent"));
 
+
+        quizModalArrayList.add(new QuizModal("Select a component which is NOT part of Android architecture", "Android Framework", "Libraries", "Android Document", "Linux Kernel", "Android Document"));
+
+
+        quizModalArrayList.add(new QuizModal("What is contained within the manifest xml file", "The permission that app requires", "The list of string used in the app", "The source code", "All other choices", "The permission that app requires"));
+
+
+        quizModalArrayList.add(new QuizModal("Which among the following are part of Application layer of Android Architecture", "Contacts", "Browser", "facebook", "All of these", "All of these"));
+
+
+        quizModalArrayList.add(new QuizModal("Which of the following is NOT a valid usage for Intents", "Activate a SQLite DB Connection", "Activate a Broadcast receiver", "Activate a Service", "Activate and Activity", "Activate a SQLite DB Connection"));
+
+
+        quizModalArrayList.add(new QuizModal("In Which Directory XML Layout Files Are Stored", "/assets", "/res/layout", "/res/values", "/src", "/res/layout"));
 
     }
 }

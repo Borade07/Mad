@@ -14,18 +14,16 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Quiz1Activity extends AppCompatActivity {
+public class Quiz10Activity extends AppCompatActivity {
     private TextView questionTV,questionNumberTV;
     private Button option1Btn,option2Btn,option3Btn,option4Btn;
     private ArrayList<QuizModal> quizModalArrayList;
     Random random;
     int currentScore = 0,questionAttemted = 1,currentPos;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz1);
+        setContentView(R.layout.activity_quiz10);
 
         questionTV = findViewById(R.id.idTVQuestion);
         questionNumberTV = findViewById(R.id.idTVQuestionAttempted);
@@ -38,8 +36,6 @@ public class Quiz1Activity extends AppCompatActivity {
         random = new Random();
 
         getQuizQuestion(quizModalArrayList);
-
-
         currentPos = random.nextInt(quizModalArrayList.size());
         setDataToViews(currentPos);
         option1Btn.setOnClickListener(new View.OnClickListener() {
@@ -98,10 +94,11 @@ public class Quiz1Activity extends AppCompatActivity {
 
             }
         });
-    }
 
+
+    }
     private void showBottomSheet(){
-        BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(Quiz1Activity.this);
+        BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(Quiz10Activity.this);
         View bottomSheetView = LayoutInflater.from(getApplicationContext()).inflate(R.layout.score_bottom_sheet,(LinearLayout)findViewById(R.id.idLLScore));
         TextView scoreTV = bottomSheetView.findViewById(R.id.idTVScore);
         Button restartQuizBtn = bottomSheetView.findViewById(R.id.idBtnRestart);
@@ -124,7 +121,7 @@ public class Quiz1Activity extends AppCompatActivity {
 
     private void setDataToViews(int currentPos){
         questionNumberTV.setText("Questions Attempted :"+questionAttemted +"/10");
-        if(questionAttemted == 10){
+        if(questionAttemted > 10){
             showBottomSheet();
         }
         else  {
@@ -141,41 +138,34 @@ public class Quiz1Activity extends AppCompatActivity {
 
     private void getQuizQuestion(ArrayList<QuizModal> quizModalArrayList ) {
 
-        quizModalArrayList.add(new QuizModal("Which of the following virtual machine is used by the Android operating system?", "JVM", "Dalvik virtual machine", "Simple virtual machine", "None of the above", "Dalvik virtual machine"
-        ));
-        quizModalArrayList.add(new QuizModal("Under which of the following Android is licensed?", "OSS", "Sourceforge", "Apache/MIT", "None of the above", "Apache/MIT"));
-        quizModalArrayList.add(new QuizModal("For which of the following Android is mainly developed?", "Servers", "Desktops", "Laptops", "Mobile devices", "Mobile devices"
-        ));
-        quizModalArrayList.add(new QuizModal("Which of the following is the first mobile phone released that ran the Android OS?", "HTC Hero", "Google gPhone", "T - Mobile G1", "None of the above", "T - Mobile G1"));
-        quizModalArrayList.add(new QuizModal("Android is based on which of the following language?", "Java", "C++", "C", "None of the above", "Java"
-        ));
-        quizModalArrayList.add(new QuizModal("APK stands for -", "Android Phone Kit", "Android Page Kit", "Android Package Kit", "None of the above", "Android Package Kit"
-        ));
-
-        quizModalArrayList.add(new QuizModal("APK stands for -", "Android Phone Kit", "Android Page Kit", "Android Package Kit", "None of the above", "Android Package Kit"));
-
-        quizModalArrayList.add(new QuizModal("What does API stand for?", "Application Programming Interface", "Android Programming Interface", "Android Page Interface", "quizModalArrayList.add(new QuizModal(Android Page Interface", " Application Programming Interface"));
-
-        quizModalArrayList.add(new QuizModal("Which of the following converts Java byte code into Dalvik byte code?", "Dalvik converter", "Dex compiler", "Mobile interpretive compiler (MIC)", "None of the above", "Dex compiler"));
-
-        quizModalArrayList.add(new QuizModal("How can we stop the services in android?", "By using the stopSelf() and stopService() method", "y using the finish() method", "By using system.exit() method", "None of the above", "By using the stopSelf() and stopService() method"));
-
-//
+        quizModalArrayList.add(new QuizModal("The android library that provides access to UI pre-built elements such as buttons, lists, views etc. is", "android.text", "android.os", "android.view", "android.webkit", "android.webkit"));
 
 
-        quizModalArrayList.add(new QuizModal("What is the parent class of all Activity widgets", "Layout", "ViewGroup", "View", "Widget", "View"));
+        quizModalArrayList.add(new QuizModal(" What does the src folder contain", "Image and icon files", "XML resource files", "Java source code files", "The application manifest file", "Java source code files"));
 
 
-        quizModalArrayList.add(new QuizModal("What is the name of the class used by Intent to store additional information", "Parcelable", "DataStore", "Extra", "Bundle", "Bundle"));
+        quizModalArrayList.add(new QuizModal("What is the latest Android", "Masmallow", "Pie", "Q", "Noughat", "Q"));
 
 
-        quizModalArrayList.add(new QuizModal("While Java or Kotlin source files stored in ....", "/res/drawable", "/src", "/res/values", "/res/layout", "/src"));
+        quizModalArrayList.add(new QuizModal("Android is based on Linux for the following reason", "Security", "Portability", "Networking", "All of these", "All of these"));
 
 
-        quizModalArrayList.add(new QuizModal("What year was the Open Handset Alliance announced", "2005", "2007", "2008", "2006", "2007"));
+        quizModalArrayList.add(new QuizModal("What is the name of the program that converts Java byte code into Dalvik byte code", "Android Interpretive Compiler (AIC)", "Dalvik Converter", "Dex compiler", "Mobile Interpretive Compiler (MIC)", "Dex compiler"));
 
 
+        quizModalArrayList.add(new QuizModal("What does the .apk extension stands for", "Application package", "Application Program kit", "Android Proprietary kit", "Android Package", "Application package"));
 
 
-    }
+        quizModalArrayList.add(new QuizModal("Which of the following AsyncTask methods is NOT executed on the UI thread", "onPreExecute()", "onPostExecute()", "publishProgress()", "onProgressUpdate()", "publishProgress()"));
+
+
+        quizModalArrayList.add(new QuizModal(" Which of the following is a Java call-back method invoked when a view is clicked", "Detector", "OnTapListener", "OnClickDetector", "OnClickListener", "OnClickListener"));
+
+
+        quizModalArrayList.add(new QuizModal("Which of the following Android View sub-classes uses the WebKit rendering engine to display", "web pages", "MapView", "WebView", "PageViewHttpClient", "WebView"));
+
+
+        quizModalArrayList.add(new QuizModal("What is AAPT", "Android Asset Processing Tool", "Android Asset Providing Tool", "Android Asset Packaging Tool", "Android Asset Packaging Technique", "Android Asset Packaging Tool"));
+
+  }
 }

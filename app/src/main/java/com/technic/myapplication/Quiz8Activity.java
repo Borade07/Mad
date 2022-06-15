@@ -14,18 +14,16 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Quiz1Activity extends AppCompatActivity {
+public class Quiz8Activity extends AppCompatActivity {
     private TextView questionTV,questionNumberTV;
     private Button option1Btn,option2Btn,option3Btn,option4Btn;
     private ArrayList<QuizModal> quizModalArrayList;
     Random random;
     int currentScore = 0,questionAttemted = 1,currentPos;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz1);
+        setContentView(R.layout.activity_quiz8);
 
         questionTV = findViewById(R.id.idTVQuestion);
         questionNumberTV = findViewById(R.id.idTVQuestionAttempted);
@@ -38,8 +36,6 @@ public class Quiz1Activity extends AppCompatActivity {
         random = new Random();
 
         getQuizQuestion(quizModalArrayList);
-
-
         currentPos = random.nextInt(quizModalArrayList.size());
         setDataToViews(currentPos);
         option1Btn.setOnClickListener(new View.OnClickListener() {
@@ -98,10 +94,12 @@ public class Quiz1Activity extends AppCompatActivity {
 
             }
         });
-    }
 
+
+
+    }
     private void showBottomSheet(){
-        BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(Quiz1Activity.this);
+        BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(Quiz8Activity.this);
         View bottomSheetView = LayoutInflater.from(getApplicationContext()).inflate(R.layout.score_bottom_sheet,(LinearLayout)findViewById(R.id.idLLScore));
         TextView scoreTV = bottomSheetView.findViewById(R.id.idTVScore);
         Button restartQuizBtn = bottomSheetView.findViewById(R.id.idBtnRestart);
@@ -141,41 +139,30 @@ public class Quiz1Activity extends AppCompatActivity {
 
     private void getQuizQuestion(ArrayList<QuizModal> quizModalArrayList ) {
 
-        quizModalArrayList.add(new QuizModal("Which of the following virtual machine is used by the Android operating system?", "JVM", "Dalvik virtual machine", "Simple virtual machine", "None of the above", "Dalvik virtual machine"
-        ));
-        quizModalArrayList.add(new QuizModal("Under which of the following Android is licensed?", "OSS", "Sourceforge", "Apache/MIT", "None of the above", "Apache/MIT"));
-        quizModalArrayList.add(new QuizModal("For which of the following Android is mainly developed?", "Servers", "Desktops", "Laptops", "Mobile devices", "Mobile devices"
-        ));
-        quizModalArrayList.add(new QuizModal("Which of the following is the first mobile phone released that ran the Android OS?", "HTC Hero", "Google gPhone", "T - Mobile G1", "None of the above", "T - Mobile G1"));
-        quizModalArrayList.add(new QuizModal("Android is based on which of the following language?", "Java", "C++", "C", "None of the above", "Java"
-        ));
-        quizModalArrayList.add(new QuizModal("APK stands for -", "Android Phone Kit", "Android Page Kit", "Android Package Kit", "None of the above", "Android Package Kit"
-        ));
 
-        quizModalArrayList.add(new QuizModal("APK stands for -", "Android Phone Kit", "Android Page Kit", "Android Package Kit", "None of the above", "Android Package Kit"));
-
-        quizModalArrayList.add(new QuizModal("What does API stand for?", "Application Programming Interface", "Android Programming Interface", "Android Page Interface", "quizModalArrayList.add(new QuizModal(Android Page Interface", " Application Programming Interface"));
-
-        quizModalArrayList.add(new QuizModal("Which of the following converts Java byte code into Dalvik byte code?", "Dalvik converter", "Dex compiler", "Mobile interpretive compiler (MIC)", "None of the above", "Dex compiler"));
-
-        quizModalArrayList.add(new QuizModal("How can we stop the services in android?", "By using the stopSelf() and stopService() method", "y using the finish() method", "By using system.exit() method", "None of the above", "By using the stopSelf() and stopService() method"));
-
-//
+        quizModalArrayList.add(new QuizModal("Android Is Developed By", "Apple", "Microsoft", "Google", "Android Inc", "Android Inc"));
 
 
-        quizModalArrayList.add(new QuizModal("What is the parent class of all Activity widgets", "Layout", "ViewGroup", "View", "Widget", "View"));
+        quizModalArrayList.add(new QuizModal("Full Name of Android", "Both A & B", "Jelly Bean", "Android KitKat", "Key Lime Pie", "Both A & B"));
 
 
-        quizModalArrayList.add(new QuizModal("What is the name of the class used by Intent to store additional information", "Parcelable", "DataStore", "Extra", "Bundle", "Bundle"));
+        quizModalArrayList.add(new QuizModal("Which Programming Language Is Used For Android Application Development", "NodeJs", "PHP", "Java", "JSX", "Java"));
+
+        quizModalArrayList.add(new QuizModal("Android Web Browser is based on", "Chrome", "Open-source Webkit", "Safari", "Firefox", "Open-source Webkit"));
+
+        quizModalArrayList.add(new QuizModal("ADB stands for", "Application Debug Bridge", "Android Debug Container", "Android Debug Bridge", "Android Dalvik Bridge", "Android Debug Bridge"));
+
+        quizModalArrayList.add(new QuizModal("Which company developed android", "Apple", "Google", "Android Inc", "Nokia", "Android Inc"));
 
 
-        quizModalArrayList.add(new QuizModal("While Java or Kotlin source files stored in ....", "/res/drawable", "/src", "/res/values", "/res/layout", "/src"));
+        quizModalArrayList.add(new QuizModal("Android is based on which kernel", "Linux", "Mac", "Windows", "Symbian", "Linux"));
 
 
-        quizModalArrayList.add(new QuizModal("What year was the Open Handset Alliance announced", "2005", "2007", "2008", "2006", "2007"));
+        quizModalArrayList.add(new QuizModal("When did Google purchase Android", "2003", "2005", "2004", "2006", "2005"));
 
+        quizModalArrayList.add(new QuizModal("What was the first phone released that ran the Android OS", "Google gphone", "T-Mobile G1C", "Motorola Droid", "HTC Hero", "T-Mobile G1C"));
 
-
+        quizModalArrayList.add(new QuizModal("Which among these are NOT a part of Android’s native libraries", "Webkit", "Dalvik", "OpenGL", "SQLite", "Dalvik"));
 
     }
 }

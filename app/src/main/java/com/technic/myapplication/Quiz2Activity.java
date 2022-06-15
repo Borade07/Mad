@@ -140,15 +140,39 @@ public class Quiz2Activity extends AppCompatActivity {
 
     private void getQuizQuestion(ArrayList<QuizModal> quizModalArrayList ) {
 
-        quizModalArrayList.add(new QuizModal("Question 1 ","Q1 O1","Q1 O2","Q1 O3","Q1 O4","Q1 O3"));
-        quizModalArrayList.add(new QuizModal("Question 2 ","Q2 O2","Q2 O2","Q2 O3","Q2 O4","Q2 O3"));
-        quizModalArrayList.add(new QuizModal("Question 3 ","Q3 O3","Q3 O2","Q3 O3","Q3 O4","Q3 O3"));
-        quizModalArrayList.add(new QuizModal("Question 4 ","Q4 O4","Q4 O2","Q4 O3","Q4 O4","Q4 O3"));
-        quizModalArrayList.add(new QuizModal("Question 5 ","Q5 O4","Q5 O2","Q5 O3","Q5 O4","Q5 O3"));
-        quizModalArrayList.add(new QuizModal("Question 6 ","Q6 O4","Q6 O2","Q6 O3","Q6 O4","Q6 O3"));
-        quizModalArrayList.add(new QuizModal("Question 7 ","Q7 O4","Q7 O2","Q7 O3","Q7 O4","Q7 O3"));
-        quizModalArrayList.add(new QuizModal("Question 8 ","Q8 O4","Q8 O2","Q8 O3","Q8 O4","Q8 O3"));
-        quizModalArrayList.add(new QuizModal("Question 9 ","Q9 O4","Q9 O2","Q9 O3","Q9 O4","Q9 O3"));
-        quizModalArrayList.add(new QuizModal("Question 10 ","Q10 O4","Q10 O2","Q10 O3","Q10 O4","Q10 O3"));
+        quizModalArrayList.add(new QuizModal("What is an activity in android?", "android class", "android package", "A single screen in an application with supporting java code", "None of the above", "A single screen in an application with supporting java code"));
+
+        quizModalArrayList.add(new QuizModal(" How can we kill an activity in android?", "Using finish() method", "Using finishActivity(int requestCode)", "Both (a) and (b)", "Neither (a) nor (b)", "(c) Both (a) and (b)"));
+
+        quizModalArrayList.add(new QuizModal("ADB stands for -", "Android debug bridge", "Android delete bridge", "Android destroy bridge", "None of the above", " Android debug bridge"));
+
+        quizModalArrayList.add(new QuizModal(" On which of the following, developers can test the application, during developing the android applications?", "Third-party emulators", "Emulator included in Android SDK", "Physical android phone", "All of the above", "All of the above"));
+
+        quizModalArrayList.add(new QuizModal("Which of the following kernel is used in Android?", "MAC", "Windows", "Linux", "Redhat", "Linux"));
+
+        quizModalArrayList.add(new QuizModal(" Which of the following is the first callback method that is invoked by the system during an activity life-cycle?", "onClick() method", "onCreate() method", "onStart() method", "onRestart() method", "onCreate() method"));
+
+        quizModalArrayList.add(new QuizModal("Which of the following is not an activity lifecycle callback method", "onClick() method", "onCreate() method", "onStart() method", "onBackPressed() method", " onBackPressed() method"));
+
+        quizModalArrayList.add(new QuizModal("We require an AVD to create an emulator. What does AVD stand for?", "Android Virtual device", "Android Virtual display", "Active Virtual display", "Active Virtual device", " Android Virtual device"));
+
+        quizModalArrayList.add(new QuizModal("What is the use of content provider in Android?", "For storing the data in the database", "For sharing the data between applications", "For sending the data from an application to another application", "None of the above", "For sending the data from an application to another application"));
+
+        quizModalArrayList.add(new QuizModal("Does android support other languages than java?", "Yes", "No", "May be", "Can't say", " Yes"));
+
+        quizModalArrayList.add(new QuizModal("What is the difference between margin and padding in android layout", "Margin is specifying the extra space left on all four sides in layout", "Padding is used to offset the content of a view by specific px or dp", "Both A and B are correct", "None of the above", "Both A and B are correct"));
+
+
+        quizModalArrayList.add(new QuizModal("During an activity life cycle, what is the first callback method invoked by the system", "onCreate()", "onStart()", "onPause()", "onStop()", "onCreate()"));
+
+
+        quizModalArrayList.add(new QuizModal("What language used in Android Studio", "Java", "Android Studio", "HTML", "C#", "Java"));
+
+
+        quizModalArrayList.add(new QuizModal("Sundar Pichai's father was as an______", "Computer engineer", "Software engineer", "Electrical engineer", "none of the above", "Electrical engineer"));
+
+
+        quizModalArrayList.add(new QuizModal("A layout that defines the position for each view based on constraints to sibling views and the parent layout", "TextView", "Activity_main", "ConstraintLayout", "Pick a Resource", "ConstraintLayout"));
+
     }
 }

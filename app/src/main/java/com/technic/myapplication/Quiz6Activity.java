@@ -14,18 +14,16 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Quiz1Activity extends AppCompatActivity {
+public class Quiz6Activity extends AppCompatActivity {
     private TextView questionTV,questionNumberTV;
     private Button option1Btn,option2Btn,option3Btn,option4Btn;
     private ArrayList<QuizModal> quizModalArrayList;
     Random random;
     int currentScore = 0,questionAttemted = 1,currentPos;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz1);
+        setContentView(R.layout.activity_quiz6);
 
         questionTV = findViewById(R.id.idTVQuestion);
         questionNumberTV = findViewById(R.id.idTVQuestionAttempted);
@@ -38,8 +36,6 @@ public class Quiz1Activity extends AppCompatActivity {
         random = new Random();
 
         getQuizQuestion(quizModalArrayList);
-
-
         currentPos = random.nextInt(quizModalArrayList.size());
         setDataToViews(currentPos);
         option1Btn.setOnClickListener(new View.OnClickListener() {
@@ -98,10 +94,11 @@ public class Quiz1Activity extends AppCompatActivity {
 
             }
         });
-    }
 
+
+    }
     private void showBottomSheet(){
-        BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(Quiz1Activity.this);
+        BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(Quiz6Activity.this);
         View bottomSheetView = LayoutInflater.from(getApplicationContext()).inflate(R.layout.score_bottom_sheet,(LinearLayout)findViewById(R.id.idLLScore));
         TextView scoreTV = bottomSheetView.findViewById(R.id.idTVScore);
         Button restartQuizBtn = bottomSheetView.findViewById(R.id.idBtnRestart);
@@ -139,43 +136,25 @@ public class Quiz1Activity extends AppCompatActivity {
 
     }
 
-    private void getQuizQuestion(ArrayList<QuizModal> quizModalArrayList ) {
+    private void getQuizQuestion(ArrayList<QuizModal> quizModalArrayList ){
+        quizModalArrayList.add(new QuizModal("Which of the following method in android is used to log debug messages?", "onStop() method", "stopService() method", "onDestroy() method", "stopSelf() method", " onDestroy() method"));
 
-        quizModalArrayList.add(new QuizModal("Which of the following virtual machine is used by the Android operating system?", "JVM", "Dalvik virtual machine", "Simple virtual machine", "None of the above", "Dalvik virtual machine"
-        ));
-        quizModalArrayList.add(new QuizModal("Under which of the following Android is licensed?", "OSS", "Sourceforge", "Apache/MIT", "None of the above", "Apache/MIT"));
-        quizModalArrayList.add(new QuizModal("For which of the following Android is mainly developed?", "Servers", "Desktops", "Laptops", "Mobile devices", "Mobile devices"
-        ));
-        quizModalArrayList.add(new QuizModal("Which of the following is the first mobile phone released that ran the Android OS?", "HTC Hero", "Google gPhone", "T - Mobile G1", "None of the above", "T - Mobile G1"));
-        quizModalArrayList.add(new QuizModal("Android is based on which of the following language?", "Java", "C++", "C", "None of the above", "Java"
-        ));
-        quizModalArrayList.add(new QuizModal("APK stands for -", "Android Phone Kit", "Android Page Kit", "Android Package Kit", "None of the above", "Android Package Kit"
-        ));
+        quizModalArrayList.add(new QuizModal("Which of the following method in android is used to log debug messages?", "Log.r()", "Log.R()", "Log.d()", "Log.d()", "Log.d()"));
 
-        quizModalArrayList.add(new QuizModal("APK stands for -", "Android Phone Kit", "Android Page Kit", "Android Package Kit", "None of the above", "Android Package Kit"));
+        quizModalArrayList.add(new QuizModal("ANR in android stands for -", "Application Not Reacting", "Application Not Reacting", "Application Not Rendering", "None of the above", "Application Not Responding"));
 
-        quizModalArrayList.add(new QuizModal("What does API stand for?", "Application Programming Interface", "Android Programming Interface", "Android Page Interface", "quizModalArrayList.add(new QuizModal(Android Page Interface", " Application Programming Interface"));
+        quizModalArrayList.add(new QuizModal("All layout classes are the subclasses of -", "android.view.View", "android.view.ViewGroup", "android.widget", "None of the above", "android.view.ViewGroup"));
 
-        quizModalArrayList.add(new QuizModal("Which of the following converts Java byte code into Dalvik byte code?", "Dalvik converter", "Dex compiler", "Mobile interpretive compiler (MIC)", "None of the above", "Dex compiler"));
+        quizModalArrayList.add(new QuizModal("Which of the following class in android executes the task asynchronously with your service?", "SyncTask", "AsyncTask", "Both of the above", "None of the above", "AsyncTask"));
 
-        quizModalArrayList.add(new QuizModal("How can we stop the services in android?", "By using the stopSelf() and stopService() method", "y using the finish() method", "By using system.exit() method", "None of the above", "By using the stopSelf() and stopService() method"));
+        quizModalArrayList.add(new QuizModal("Which of the following layout in android arranges its children into rows and columns?", "RelativeLayout", "TableLayout", "FrameLayout", "None of the above", "TableLayout"));
 
-//
+        quizModalArrayList.add(new QuizModal("Which of the following layout in android aligns all children either vertically or horizontally?", "RelativeLayout", "TableLayout", "FrameLayout", "LinearLayout", " LinearLayout"));
 
+        quizModalArrayList.add(new QuizModal("What is the default value of the orientation attribute in LinearLayout?", "Horizontal", "Vertical", "There is no default value of orientation attribute in LinearLayout", "None of the above", "Horizontal"));
 
-        quizModalArrayList.add(new QuizModal("What is the parent class of all Activity widgets", "Layout", "ViewGroup", "View", "Widget", "View"));
+        quizModalArrayList.add(new QuizModal("What is the nine-patch images tool in android?", "It is an image extension tool.", "It is used to change the bitmap images into nine sections", "Both (a) and (b)", "None of the above", "It is used to change the bitmap images into nine sections"));
 
-
-        quizModalArrayList.add(new QuizModal("What is the name of the class used by Intent to store additional information", "Parcelable", "DataStore", "Extra", "Bundle", "Bundle"));
-
-
-        quizModalArrayList.add(new QuizModal("While Java or Kotlin source files stored in ....", "/res/drawable", "/src", "/res/values", "/res/layout", "/src"));
-
-
-        quizModalArrayList.add(new QuizModal("What year was the Open Handset Alliance announced", "2005", "2007", "2008", "2006", "2007"));
-
-
-
-
-    }
+        quizModalArrayList.add(new QuizModal("GCM in android stands for -", "Google Cloud Messaging", "Google Count Messaging", "Google Center Messaging", "None of the above", "Google Cloud Messaging"));
+}
 }

@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ProgramsActivity extends AppCompatActivity {
 
-    Button b1,b2,b3,b4,b5,b6,b7,b8;
+    Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14;;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,12 @@ public class ProgramsActivity extends AppCompatActivity {
         b6 = findViewById(R.id.b6);
         b7 = findViewById(R.id.b7);
         b8 = findViewById(R.id.b8);
-
+        b9 = findViewById(R.id.b9);
+        b10= findViewById(R.id.b10);
+        b11= findViewById(R.id.b11);
+        b12= findViewById(R.id.b12);
+        b13= findViewById(R.id.b13);
+        b14= findViewById(R.id.b14);
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,7 +77,56 @@ public class ProgramsActivity extends AppCompatActivity {
         b7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                gotoUrl("https://drive.google.com/file/d/1PYy7zEw37vJlN3kXLGo-EGNaf5oq2jwW/view?usp=sharing");
+                gotoUrl("https://www.tutorialspoint.com/android/android_user_interface_layouts.htm");
+            }
+        });
+
+        b8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoUrl("https://www.tutorialspoint.com/android/android_user_interface_layouts.htm");
+            }
+        });
+
+        b9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoUrl("https://www.tutorialspoint.com/android/android_user_interface_layouts.htm");
+            }
+        });
+
+        b10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoUrl("https://www.tutorialspoint.com/android/android_user_interface_layouts.htm");
+            }
+        });
+
+        b11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoUrl("https://www.tutorialspoint.com/android/android_user_interface_layouts.htm");
+            }
+        });
+
+        b12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoUrl("https://www.tutorialspoint.com/android/android_user_interface_layouts.htm");
+            }
+        });
+        b13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoUrl("https://www.tutorialspoint.com/android/android_notifications.htm");
+            }
+        });
+
+        b14.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoUrl("https://www.tutorialspoint.com/android/android_location_based_services.htm");
+
             }
         });
 

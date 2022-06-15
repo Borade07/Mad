@@ -9,26 +9,17 @@
         android:background="@drawable/gradients">
     <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:orientation="vertical" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/linearLayout"
-            app:layout_constraintHorizontal_bias="1.0">
+                  android:layout_height="match_parent"
+                  android:paddingLeft="16dp"
+                  android:paddingRight="16dp"
+                  android:orientation="vertical" >
+        <ImageView
+                android:src="@drawable/ppt"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="76dp"
+                android:layout_height="match_parent"
 
-        <Button
-                android:text="Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/pdf" tools:layout_editor_absoluteY="3dp"
-                tools:layout_editor_absoluteX="113dp"/>
 
-        <com.github.barteksc.pdfviewer.PDFView
-                android:id="@+id/pdfView"
-                android:layout_width="381dp"
-                android:layout_height="match_parent">
-        </com.github.barteksc.pdfviewer.PDFView>
-
+        />
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
