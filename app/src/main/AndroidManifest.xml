@@ -9,6 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            android:exported="true"
+        </activity>
         <activity
             android:name=".Yt10Activity"
             android:exported="false" />
@@ -86,10 +96,9 @@
             android:exported="false" />
         <activity
             android:name=".Yt3Activity"
-            android:exported="true" />
-<!--        <activity-->
-<!--            android:name=".Yt2Activity"-->
-<!--            android:exported="true" />-->
+            android:exported="true" /> <!-- <activity -->
+        <!-- android:name=".Yt2Activity" -->
+        <!-- android:exported="true" /> -->
         <activity
             android:name=".Yt1Activity"
             android:exported="true" />
