@@ -28,7 +28,7 @@
             android:name=".Yt94Activity"
             android:exported="false" />
         <activity
-            android:name=".Yt2Activity2"
+            android:name=".Yt2Activity"
             android:exported="false" />
         <activity
             android:name=".Yt91Activity"
