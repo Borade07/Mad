@@ -13,6 +13,8 @@ public class FileDownloader {
         try {
             URL url = new URL(fileUrl);
             HttpURLConnection urlConnection = (HttpURLConnection)url.openConnection();
+            urlConnection.setRequestMethod("GET");
+            urlConnection.setDoOutput(true);
             urlConnection.connect();
 
             //creating input stream

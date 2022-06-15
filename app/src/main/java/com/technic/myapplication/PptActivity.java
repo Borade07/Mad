@@ -35,7 +35,7 @@ public class PptActivity extends AppCompatActivity {
     }
 
     private void downloadPdfFronUrl(){
-        new DownloadPdf().execute("http://maven.apache.org/archives/maven-1.x.pdf", "maven.pdf");
+        new DownloadPdf().execute("https://www.tutorialspoint.com/android/android_tutorial.pdf", "maven.pdf");
     }
 
     public void ViewPDF(){
