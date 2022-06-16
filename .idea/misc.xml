@@ -3,7 +3,43 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_ass1.xml" value="0.2526041666666667" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_ass2.xml" value="0.2526041666666667" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_ass3.xml" value="0.2526041666666667" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_ass4.xml" value="0.2526041666666667" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_ass5.xml" value="0.2526041666666667" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_handouts.xml" value="0.2526041666666667" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_main.xml" value="0.11145833333333334" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_ppt.xml" value="0.1" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_ppt1.xml" value="0.2375" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_q1.xml" value="0.19074074074074074" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_q2.xml" value="0.19074074074074074" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_q3.xml" value="0.19074074074074074" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_q4.xml" value="0.19074074074074074" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_q5.xml" value="0.19074074074074074" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_questionbank.xml" value="0.1" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_quiz.xml" value="0.2526041666666667" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_quiz1.xml" value="0.2526041666666667" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_quiz10.xml" value="0.2526041666666667" />
         <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_splash.xml" value="0.2351851851851852" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_unit1.xml" value="0.2526041666666667" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_unit2.xml" value="0.2526041666666667" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_unit3.xml" value="0.2526041666666667" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_unit4.xml" value="0.2526041666666667" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_unit5.xml" value="0.2526041666666667" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_unit6.xml" value="0.2526041666666667" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_videos.xml" value="0.2526041666666667" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_view_pdf.xml" value="0.2526041666666667" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_yt1.xml" value="0.264" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_yt10.xml" value="0.2526041666666667" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_yt2.xml" value="0.264" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_yt3.xml" value="0.264" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_yt4.xml" value="0.264" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_yt5.xml" value="0.2526041666666667" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_yt6.xml" value="0.2526041666666667" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_yt7.xml" value="0.2526041666666667" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_yt8.xml" value="0.2" />
+        <entry key="..\:/GitHUb/Mad/app/src/main/res/layout/activity_yt9.xml" value="0.2526041666666667" />
         <entry key="..\:/jb/MadProject/MadProject/app/src/main/res/drawable/background_splashscreen.xml" value="0.1" />
         <entry key="..\:/jb/MadProject/MadProject/app/src/main/res/layout/activity_main.xml" value="0.2351851851851852" />
         <entry key="..\:/jb/MadProject/MadProject/app/src/main/res/layout/activity_ppt.xml" value="0.2526041666666667" />

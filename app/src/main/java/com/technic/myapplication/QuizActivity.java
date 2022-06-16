@@ -37,6 +37,7 @@ public class QuizActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(QuizActivity.this,Quiz1Activity.class);
+                intent.putExtra("quiz",1);
                 startActivity(intent);
             }
         });

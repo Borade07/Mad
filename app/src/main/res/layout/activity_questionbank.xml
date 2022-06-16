@@ -7,17 +7,72 @@
         android:layout_height="match_parent"
         tools:context=".QuestionbankActivity"
         android:background="@drawable/gradients">
-    <LinearLayout
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:orientation="vertical" >
-        <ImageView
-                android:src="@drawable/question"
-                android:layout_gravity="center_horizontal"
-                android:layout_width="284dp"
-                android:layout_height="754dp"/>
-    </LinearLayout>
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Question Bank"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_margin="14dp"
+                />
+            <Button
+                android:text="Question Bank 1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:id="@+id/qb1"
+                tools:layout_editor_absoluteY="150dp"
+                tools:layout_editor_absoluteX="161dp"/>
+            <Button
+                android:text="Question Bank 2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:id="@+id/qb2"
+                tools:layout_editor_absoluteY="150dp"
+                tools:layout_editor_absoluteX="161dp"/>
+            <Button
+                android:text="Question Bank 3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:id="@+id/qb3"
+                tools:layout_editor_absoluteY="150dp"
+                tools:layout_editor_absoluteX="161dp"/>
+            <Button
+                android:text="Question Bank 4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:id="@+id/qb4"
+                tools:layout_editor_absoluteY="150dp"
+                tools:layout_editor_absoluteX="161dp"/>
+            <Button
+                android:text="Question Bank 5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:id="@+id/qb5"
+                tools:layout_editor_absoluteY="150dp"
+                tools:layout_editor_absoluteX="161dp"/>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

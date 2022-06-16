@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.technic.myapplication">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,9 +12,55 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity
-            android:name=".SplashActivity">
+            android:name=".Ass5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Ass4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Ass3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Ass2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Ass1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Q5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Q4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Q3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Q2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Q1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Unit6Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Unit5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Unit4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Unit3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Unit2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".unit1Activity"
+            android:exported="false" />
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
