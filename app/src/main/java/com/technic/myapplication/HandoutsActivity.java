@@ -24,10 +24,46 @@ public class HandoutsActivity extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HandoutsActivity.this,Ass1Activity.class);
+                Intent intent = new Intent(HandoutsActivity.this,HangoutAll.class);
+                intent.putExtra("handouts",1);
                 startActivity(intent);
             }
         });
 
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HandoutsActivity.this,HangoutAll.class);
+                intent.putExtra("handouts",2);
+                startActivity(intent);
+            }
+        });
+
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HandoutsActivity.this,HangoutAll.class);
+                intent.putExtra("handouts",3);
+                startActivity(intent);
+            }
+        });
+
+        b4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HandoutsActivity.this,HangoutAll.class);
+                intent.putExtra("handouts",4);
+                startActivity(intent);
+            }
+        });
+
+        b5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HandoutsActivity.this,HangoutAll.class);
+                intent.putExtra("handouts",5);
+                startActivity(intent);
+            }
+        });
     }
 }

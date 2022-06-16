@@ -38,38 +38,44 @@ public class PptActivity extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PptActivity.this,unit1Activity.class);
+                Intent intent = new Intent(PptActivity.this,PptAll.class);
+                intent.putExtra("ppt",1);
                 startActivity(intent);
             }
         });
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PptActivity.this,Unit2Activity.class);
+                Intent intent = new Intent(PptActivity.this,PptAll.class);
+                intent.putExtra("ppt",2);
                 startActivity(intent);
             }
         });b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PptActivity.this,Unit3Activity.class);
+                Intent intent = new Intent(PptActivity.this,PptAll.class);
+                intent.putExtra("ppt",3);
                 startActivity(intent);
             }
         });b4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PptActivity.this,Unit4Activity.class);
+                Intent intent = new Intent(PptActivity.this,PptAll.class);
+                intent.putExtra("ppt",4);
                 startActivity(intent);
             }
         });b5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PptActivity.this,Unit5Activity.class);
+                Intent intent = new Intent(PptActivity.this,PptAll.class);
+                intent.putExtra("ppt",5);
                 startActivity(intent);
             }
         });b6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PptActivity.this,Unit6Activity.class);
+                Intent intent = new Intent(PptActivity.this,PptAll.class);
+                intent.putExtra("ppt",6);
                 startActivity(intent);
             }
         });

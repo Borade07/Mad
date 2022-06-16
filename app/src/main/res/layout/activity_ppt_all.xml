@@ -4,12 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Ass4Activity">
+    tools:context=".PptAll">
 
     <com.github.barteksc.pdfviewer.PDFView
-        android:id="@+id/hass4"
+        android:id="@+id/viewUnit1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
-
 
 </RelativeLayout>

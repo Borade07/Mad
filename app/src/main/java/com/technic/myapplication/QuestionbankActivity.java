@@ -24,7 +24,8 @@ public class QuestionbankActivity extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(QuestionbankActivity.this,Q1Activity.class);
+                Intent intent = new Intent(QuestionbankActivity.this,QuestionBankAll.class);
+                intent.putExtra("questionBank",1);
                 startActivity(intent);
             }
         });
@@ -32,28 +33,32 @@ public class QuestionbankActivity extends AppCompatActivity {
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(QuestionbankActivity.this,Q2Activity.class);
+                Intent intent = new Intent(QuestionbankActivity.this,QuestionBankAll.class);
+                intent.putExtra("questionBank",2);
                 startActivity(intent);
             }
         });
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(QuestionbankActivity.this,Q3Activity.class);
+                Intent intent = new Intent(QuestionbankActivity.this,QuestionBankAll.class);
+                intent.putExtra("questionBank",3);
                 startActivity(intent);
             }
         });
         b4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(QuestionbankActivity.this,Q4Activity.class);
+                Intent intent = new Intent(QuestionbankActivity.this,QuestionBankAll.class);
+                intent.putExtra("questionBank",4);
                 startActivity(intent);
             }
         });
         b5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(QuestionbankActivity.this,Q5Activity.class);
+                Intent intent = new Intent(QuestionbankActivity.this,QuestionBankAll.class);
+                intent.putExtra("questionBank",5);
                 startActivity(intent);
             }
         });

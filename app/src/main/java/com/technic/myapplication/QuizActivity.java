@@ -36,7 +36,7 @@ public class QuizActivity extends AppCompatActivity {
         q1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(QuizActivity.this,Quiz1Activity.class);
+                Intent intent = new Intent(QuizActivity.this,QuizAll.class);
                 intent.putExtra("quiz",1);
                 startActivity(intent);
             }
@@ -44,63 +44,72 @@ public class QuizActivity extends AppCompatActivity {
         q2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(QuizActivity.this,Quiz2Activity.class);
+                Intent intent = new Intent(QuizActivity.this,QuizAll.class);
+                intent.putExtra("quiz",2);
                 startActivity(intent);
             }
         });
         q3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(QuizActivity.this,Quiz3Activity.class);
+                Intent intent = new Intent(QuizActivity.this,QuizAll.class);
+                intent.putExtra("quiz",3);
                 startActivity(intent);
             }
         });
         q4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(QuizActivity.this,Quiz4Activity.class);
+                Intent intent = new Intent(QuizActivity.this,QuizAll.class);
+                intent.putExtra("quiz",4);
                 startActivity(intent);
             }
         });
         q5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(QuizActivity.this,Quiz5Activity.class);
+                Intent intent = new Intent(QuizActivity.this,QuizAll.class);
+                intent.putExtra("quiz",5);
                 startActivity(intent);
             }
         });
         q6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(QuizActivity.this,Quiz6Activity.class);
+                Intent intent = new Intent(QuizActivity.this,QuizAll.class);
+                intent.putExtra("quiz",6);
                 startActivity(intent);
             }
         });
         q7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(QuizActivity.this,Quiz7Activity.class);
+                Intent intent = new Intent(QuizActivity.this,QuizAll.class);
+                intent.putExtra("quiz",7);
                 startActivity(intent);
             }
         });
         q8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(QuizActivity.this,Quiz8Activity.class);
+                Intent intent = new Intent(QuizActivity.this,QuizAll.class);
+                intent.putExtra("quiz",8);
                 startActivity(intent);
             }
         });
         q9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(QuizActivity.this,Quiz9Activity.class);
+                Intent intent = new Intent(QuizActivity.this,QuizAll.class);
+                intent.putExtra("quiz",9);
                 startActivity(intent);
             }
         });
         q10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(QuizActivity.this,Quiz10Activity.class);
+                Intent intent = new Intent(QuizActivity.this,QuizAll.class);
+                intent.putExtra("quiz",10);
                 startActivity(intent);
             }
         });
