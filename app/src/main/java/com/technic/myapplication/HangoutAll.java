@@ -16,25 +16,25 @@ public class HangoutAll extends AppCompatActivity {
         qNo = getIntent().getExtras().getInt("handouts");
         PDFView pdfView= findViewById(R.id.hangall);
         if(qNo==1) {
-            pdfView.fromAsset("Amey Resume.pdf").load();
+            pdfView.fromAsset("Exp2.pdf").load();
         }
         else if(qNo==2){
-            pdfView.fromAsset("AI Assignment 2.pdf").load();
+            pdfView.fromAsset("Exp3.pdf").load();
         }
 
         else if(qNo==3){
 
-            pdfView.fromAsset("Amey Resume.pdf").load();
+            pdfView.fromAsset("Exp4.pdf").load();
 
         }
 
         else if(qNo==4){
-            pdfView.fromAsset("AI Assignment 2.pdf").load();
+            pdfView.fromAsset("Exp5.pdf").load();
         }
 
         else if(qNo==5){
 
-            pdfView.fromAsset("Amey Resume.pdf").load();
+            pdfView.fromAsset("Exp6.pdf").load();
 
         }
 

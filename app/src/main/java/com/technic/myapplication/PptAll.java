@@ -17,22 +17,22 @@ public class PptAll extends AppCompatActivity {
         PDFView pdfView= findViewById(R.id.viewUnit1);
 //change name as pdf required
         if (qNo==1) {
-            pdfView.fromAsset("AI Assignment 2.pdf").load();
+            pdfView.fromAsset("Unit 01.pdf").load();
         }else if(qNo==2){
-            pdfView.fromAsset("Amey Resume.pdf").load();
+            pdfView.fromAsset("Unit 01.pdf").load();
         }
         else if(qNo==3){
-            pdfView.fromAsset("AI Assignment 2.pdf").load();
+            pdfView.fromAsset("Unit 03.pdf").load();
         }
         else if(qNo==4){
-            pdfView.fromAsset("Amey Resume.pdf").load();
+            pdfView.fromAsset("Unit 04.pdf").load();
 
         }
         else if(qNo==5){
-            pdfView.fromAsset("AI Assignment 2.pdf").load();
+            pdfView.fromAsset("Unit 05.pdf").load();
         }
         else if(qNo==6){
-            pdfView.fromAsset("Amey Resume.pdf").load();
+            pdfView.fromAsset("Unit 06.pdf").load();
 
         }
     }

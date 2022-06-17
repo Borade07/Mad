@@ -17,19 +17,19 @@ public class QuestionBankAll extends AppCompatActivity {
         PDFView pdfView= findViewById(R.id.allquestion);
 
         if (qNo==1) {
-            pdfView.fromAsset("AI Assignment 2.pdf").load();
+            pdfView.fromAsset("q1.pdf").load();
         }else if(qNo==2){
-            pdfView.fromAsset("Amey Resume.pdf").load();
+            pdfView.fromAsset("q2.pdf").load();
         }
         else if(qNo==3){
-            pdfView.fromAsset("AI Assignment 2.pdf").load();
+            pdfView.fromAsset("q1.pdf").load();
         }
         else if(qNo==4){
-            pdfView.fromAsset("Amey Resume.pdf").load();
+            pdfView.fromAsset("q2.pdf").load();
 
         }
         else if(qNo==5){
-            pdfView.fromAsset("AI Assignment 2.pdf").load();
+            pdfView.fromAsset("q1.pdf").load();
         }
     }
 }
